@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function abc()
+{
+alert("BOOK RETURNED SUCCESSFULLY!")
+}
+</script>
+<style>
+body
+{
+background-image:url("images/lib2.jpg");
+background-size:cover;
+background-attachment:fixed;
+}
+input[type=text]
+{
+width:30%;
+padding:6px;
+border-radius:5px;
+}
+input[type=text]:focus
+{
+border: 2px solid yellow;
+}
+
+input[type=submit]
+{
+background-color:yellow;
+border:none;
+cursor:pointer;
+font-size:20px;
+font-family:cursive;
+border-radius:5px;
+}
+input[type=submit]:hover
+{
+background-color:lightyellow;
+}
+a
+{
+color:yellow;
+font-size:20px;
+text-decoration:none;
+padding-left:90px;
+float:center;
+}
+a:hover
+{
+color:white;
+}
+</style>
+<body>
+<center><header style="background-color:white;opacity:0.5;border:1px solid black;padding-bottom:1px;font-family:ALGERIAN;font-size:250%;color:#F94F2A;"><h1>RETURN BOOKS<h1></header><br><br>
+<div style="background-color:rgba(0,0,0,0.5);margin-top:5px;padding-bottom:15px;font-family:Times Roman;font-size:180%;color:#FFFFFF;">
+<br>
+BOOK ID:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="text" placeholder="BOOK ID" name="bID"><br>
+BOOK NAME:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="text" placeholder="BOOK NAME"><br>
+RETURN DATE:&nbsp&nbsp&nbsp&nbsp
+<input type="text" placeholder="RETURN DATE" name="returndate"><br>
+CURRENT DATE:&nbsp&nbsp
+<input type="text" placeholder="CURRENT DATE"><br>
+FINE/DUE:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="text" placeholder="(IF ANY)"><br>
+<input type="submit" value="RETURN BOOK" onclick="abc()">
+<br>
+<br>
+<a href="login"target="_self">HOME PAGE&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a><br>
+<a href="search_book"target="_self">SEARCH BOOKS&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a><br>
+<a href="add"target="_self">ADD NEW MEMBER&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a><br>
+<a href="issue_book"target="_self">ISSUE BOOKS&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a><br>
+</div><br><br>
+<footer style="background-color:white;opacity:0.8;font-family:Times Roman;font-size:180%;color:##F94F2A;">Library@abc.in</footer>
+</center>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<title> LMS </title>
+<style>
+.item1{grid-area:div1;padding:130px;}
+.item2{grid-area:div2;}
+.item3{grid-area:div3;}
+.item4{grid-area:div4;}
+.item5{grid-area:div5;}
+.grid-container
+{
+display:grid;
+grid-gap:5px;
+grid-template-areas:
+      'div1 div1 div1 div1 div1 div1'
+      'div2 div2 div3 div3 div4 div4'
+      'div5 div5 div5 div5 div5 div5'
+}
+.grid-container>div
+{
+color:black;
+font-size:120%;
+text-align:center;
+}
+table
+{ 
+background-color:rgba(0,0,0,0.4);
+margin-top:40px;
+margin-left:140px;
+padding-bottom:15px; 
+height:250px; 
+width:100%; 
+font-size:150%;
+color:#FFFFFF;
+text-align:center;
+}
+
+input[type=text],input[type=password]
+{
+width:90%;
+height:50%;
+}
+select
+{
+padding-left:10px;
+width:70%;
+height:50%;
+}
+
+</style>
+<script>
+</script>
+</head>
+
+<body style=" background-image:url('images/lib.jpg'); background-repeat:no-repeat; background-size:100%; background-blend-mode:lighten;">
+<div class="grid-container">
+<div class="item1" align="center" style="background-color:rgba(0,0,0,0.5);margin-left:15px;margin-top:50px;padding-bottom:15px;padding-top:20px;font-family:ALGERIAN;font-size:280%;color:#FFFFFF; width:80%; height:80px;">
+<p align="center" style="margin:10px;">LIBRARY MANAGEMENT SYSTEM</p>
+</div>
+
+<div class ="item2"></div>
+<form name="f2" action='/login' method="post">
+<center><div class="item3">
+<table align="center">
+<tr>
+	<td colspan=4> LOGIN PAGE </td> 
+</tr>
+<br>
+<tr>
+	<td>USERNAME:</td><td><input type="text" id="a" placeholder="USERNAME" name="name"></td>
+	<td>PASSWORD:</td><td><input type="password" id="b" placeholder="PASSWORD" name="pwd"></td>
+</tr>
+<br>
+<tr>
+	<td>USER:</td>
+	<td><select id="c" name="visitor">
+		<option value="Librarian" >LIBRARIAN</option>
+		<option value="Student" >STUDENT</option>
+		<option value="Faculty" >FACULTY</option>
+	</select>
+	</td>
+	<td>LANDING PAGE:</td>
+	<td><select id="d" name="page">
+		<option value="1">HOME PAGE</option>
+		<option value="2">SEARCH BOOKS</option>
+		<option value="3">ADD MEMBER</option>
+		<option value="4">ISSUE BOOKS</option>
+		<option value="5">RETURN BOOKS</option>
+	</select>
+	</td>
+</tr>
+<br>
+<tr>
+	<td colspan=4>
+	<input type="submit" value="LOGIN" style="background-color:yellow; color:black; width:100px; height:30px; border-radius:5px;">
+	</td>
+</tr>
+</center>
+<div class ="item4"></div>
+<div class="item5"></div>
+</div>
+</form>
+</body>
+</html>

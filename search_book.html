@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+</script>
+<style>
+body
+{
+background-image:url("images/lib3.jpg");
+background-size:cover;
+background-attachment:fixed;
+}
+select
+{
+width:30%;
+cursor:pointer;
+border:none;
+box-sizing: border-box;
+border-radius:5px;
+background-color:lightblue;
+font-size:20px;
+font-family:cursive;
+}
+input[type=text]
+{
+width:30%;
+padding:6px;
+box-sizing: border-box;
+border-radius:5px;
+}
+input[type=text]:focus
+{
+border: 2px solid lightblue;
+}
+input[type=submit]
+{
+background-color:lightblue;
+border:none;
+cursor:pointer;
+font-size:20px;
+font-family:cursive;
+border-radius:5px;
+}
+input[type=submit]:hover
+{
+background-color:DeepSkyBlue;
+}
+a
+{
+color:lightblue;
+font-size:20px;
+text-decoration:none;
+padding-left:90px;
+float:center;
+}
+a:hover
+{
+color:yellow;
+}
+</style>
+<body>
+<center><header style="background-color:white;opacity:0.7;border:1px solid black;padding-bottom:1px;font-family:ALGERIAN;font-size:250%;color:#F94F2A;"><h1>SEARCH BOOKS<h1></header><br><br>
+<div style="background-color:rgba(0,0,0,0.5);margin-top:5px;padding-bottom:15px;font-family:Times Roman;font-size:180%;color:#FFFFFF;">
+<br>
+<form action='/search_book' method="post">
+BOOK NAME:&nbsp&nbsp&nbsp&nbsp
+<input type="text" name="bookname" placeholder="NAME OF THE BOOK">
+<br>BOOK RACK:&nbsp&nbsp&nbsp&nbsp
+<select name="booktype">
+<option value="CSE">COMPUTER SCIENCE ENGINEERING</option>
+<option value="ece">ELECTRONICS AND COMMUNICATION ENGINEERING</option>
+<option value="ee">ELECTRICAL ENGINEERING</option>
+<option value="me">MECHANICAL ENGINEERING</option>
+<option value="ce">CIVIL ENGINEERING</option>
+<option value="ae">AERONAUTICAL ENGINEERING</option>
+<option value="physio">PHYSIOTHERAPY</option>
+<option value="socio">SOCIOLOGY</option>
+<option value="business">BUISNESS MANGEMENT</option>
+<option value="law">LAW</option>
+<option value="automobile">AUTOMOBILE DESIGN</option>
+<option value="agri">AGRICULTURE</option>
+<option value="med">MEDICAL</option>
+<option value="hist">HISTORY</option>
+<option value="stats">STATISTICS</option>
+<option value="phyedu">PHYSICAL EDUCATION</option>
+<option value="mecha">MECHATRONICS</option>
+<option value="scientificr">SCIENTIFIC RESEARCH</option>
+<option value="arts">ARTS</option>
+<option value="pel">COMMUNICATION SKILLS</option>
+</select>
+<br>
+<input type="submit" value="SEARCH" >
+<br>
+<br>
+<a href="login" target="_self">HOME PAGE&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a><br>
+<a href="add" target="_selfk">ADD NEW MEMBER&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a><br>
+<a href="issue_book" target="_self">ISSUE BOOKS&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a><br>
+<a href="return_book" target="_self">RETURN BOOKS&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a><br>
+</div><br><br>
+<footer style="background-color:white;opacity:0.8;font-family:Times Roman;font-size:180%;color:##F94F2A;">Library@abc.in</footer>
+</center>
+</form>
+</body>
+</html>

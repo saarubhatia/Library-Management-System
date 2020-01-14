@@ -1,0 +1,164 @@
+
+<!DOCTYPE  html>
+<html>
+<head>
+<link rel="shortcut icon" href ="/image/l1.ico">
+<style>
+.item1
+{
+grid-area:head;
+font-size:50px;
+padding-bottom:20px;
+background-image:url("images/login.jpg");
+background-repeat:no-repeat;
+background-size:100%;
+}
+.item2
+{
+grid-area:left;
+padding:20px;
+}
+.item3
+{
+grid-area:main;
+padding:20px;
+}
+.item4
+{
+grid-area:right;
+padding:20px;
+}
+.item5
+{
+grid-area:footer;
+padding:50px;
+background-color:white;
+opacity:0.8;
+}
+#image
+{
+border-radius:50%;
+}
+.grid-container     
+{
+display:grid;
+grid-template-areas:
+'head head head head head head'
+'left left main main right right'
+'footer footer footer footer footer footer';
+}
+.grid-container>div
+{
+color:white;
+font-family:cursive;
+text-align:center;
+}
+#a
+{
+color:white;
+width:75%;
+padding:20px;
+background-color:rgba(0,0,0,0.5);
+}
+body
+{
+background-image:url("images/l1.jpg");
+background-size:cover;
+background-attachment:fixed;
+}
+p
+{
+font-style:italic;
+font-weight:bold;
+font-size:20px;
+color:white;
+}
+a
+{
+color:white;
+font-size:30px;
+text-decoration:none;
+padding-left:90px;
+float:center;
+}
+a:hover
+{
+color:Yellow;
+}
+</style>
+<script>
+function abc()
+{
+a=confirm("Do you want to log out?")
+if(a==1)
+{
+window.open("/",'_self')
+alert("Successfully logged out!")
+}
+}
+</script>
+</head>
+<body>
+<div class="grid-container">
+<div class="item1"> 
+<div style="background-color:rgba(0,0,0,0.5);margin-top:30px;padding-bottom:15px;">
+<a href="search_book" target="_self">SEARCH BOOKS</a>
+<a href="add_new" target="_self">ADD NEW MEMBER</a>
+<a href="Issue_book" target="_self">ISSUE BOOKS</a>
+<a href="return_book" target="_self">RETURN BOOKS</a>
+<a onclick="abc()">LOGOUT</a>
+</div>
+<marquee scrollamount="12" behavior="scroll" onmouseover="stop()" onmouseout="start()" width="700px" loop="4" style="font-size:20px";>Welcome to our Library. Now you can access our services.Thank You!
+</marquee>
+</div>
+<div class="item2">
+<center>
+<div id="a"><p>NEW BOOKS</p>
+Recently 4 new books were added in the library!<br>
+<img id="image"src="images/l.jpg"width="200px"height="200px"><br>
+Mathematics Concepts - R.D.Sharma&nbsp&nbsp&nbsp&nbsp&nbsp
+Concepts of Physics (Part 1)-H.C.Verma
+Chemistry Laboratory Manuals-Pearson
+French Revolution (History  Part 1) - Henry James
+</div>
+</center>
+</div>
+<div class="item3">
+<center>
+<div id="a"><p>ISSUE PERIOD</p>
+Updatation on issue period!
+<img id="image"src="images/l.jpg"width="200px"height="200px"><br>
+According to the new rules and regulations of the library, students will now be allowed to issue books for 15 days instead of 7 days.However the rule must not be applicable for issuing some books.
+</div>
+</center>
+</div>
+<div class="item4">
+<center>
+<div id="a"><p>FINE/DUE</p>
+Updatation on Fine/due amounts!
+<img id="image"src="images/l.jpg"width="200px"height="200px"><br>
+According to the new rules and regulations of the library, students will now have to pay a fine of Rs 15/day instead of Rs 10/day if they fail to return the book; which will be applicable after each successive day from the last day of submission.
+</div>
+</center>
+</div>
+<div class="item5">
+<center>
+<div style="background-color:#761804;width:40%;font-size:30px;">
+library@co.in
+</div>
+<br>
+<div style="color:#761804;">856.816.6159|610.952.1398<br><br>
+"As the engine oil is required for the smooth functioning of the engine;the same way, a powerful management system is essential for the smooth functioning of the bank"</div>
+<br>
+<img src="images/login.jpg"width="30px"height="30px">
+<img src="images/lib4.jpg"width="30px"height="30px">
+<img src="images/lib3.jpg"width="30px"height="30px">
+<img src="images/l1.jpg"width="30px"height="30px">
+<img src="images/l.jpg"width="30px"height="30px">
+<img src="images/lib2.jpg"width="30px"height="30px">
+</center>
+</div>
+</div>
+</body>
+</html>
+

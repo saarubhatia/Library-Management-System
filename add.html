@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function abc()
+{
+alert("A MEMBER HAS BEEN ADDED!")
+}
+</script>
+<style>
+body
+{
+background-image:url("images/lib4.jpg");
+background-size:cover;
+background-attachment:fixed;
+}
+select
+{
+width:30%;
+cursor:pointer;
+border:none;
+box-sizing: border-box;
+border-radius:5px;
+background-color:lightgreen;
+font-size:20px;
+font-family:cursive;
+}
+input[type=text],input[type=password]
+{
+width:30%;
+padding:6px;
+box-sizing: border-box;
+border-radius:5px;
+}
+input[type=text]:focus,input[type=password]:focus
+{
+border: 2px solid lightgreen;
+}
+input[type=submit]
+{
+background-color:lightgreen;
+border:none;
+cursor:pointer;
+font-size:20px;
+font-family:cursive;
+border-radius:5px;
+}
+input[type=submit]:hover
+{
+background-color:DarkGreen;
+}
+a
+{
+color:lightgreen;
+font-size:20px;
+text-decoration:none;
+padding-left:90px;
+float:center;
+}
+a:hover
+{
+color:yellow;
+}
+</style>
+<body>
+<center><header style="background-color:white;opacity:0.6;border:1px solid black;padding-bottom:1px;font-family:ALGERIAN;font-size:250%;color:#F94F2A;"><h1>ADD NEW MEMBER</h1></header><br><br>
+<div style="background-color:rgba(0,0,0,0.5);margin-top:5px;padding-bottom:15px;font-family:Times Roman;font-size:180%;color:#FFFFFF;">
+<br>
+<form name="form1" action='/home' method="post">
+USERNAME:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" name="username" placeholder="NAME OF THE MEMBER">
+<br>
+PASSWORD:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="password" placeholder="PASSWORD" name="pass">
+<br>MEMBER TYPE:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<select name="user">
+<option value="Faculty">FACULTY MEMBER</option>
+<option value="Student">STUDENT MEMBER</option>
+<option value="Guest">GUEST MEMBER</option>
+</select><br>
+<input type="submit" value="ADD MEMBER" onclick="abc()">
+<br>
+<br>
+<a href="login" target="_self">HOME PAGE&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a><br>
+<a href="search_book" target="_self">SEARCH BOOKS&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a><br>
+<a href="issue_book" target="_self">ISSUE BOOKS&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a><br>
+<a href="return_books" target="_self">RETURN BOOKS&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a><br>
+</div><br><br>
+<footer style="background-color:white;opacity:0.8;font-family:Times Roman;font-size:180%;color:##F94F2A;">Library@abc.in</footer>
+</form>
+</center>
+</body>
+</html>
